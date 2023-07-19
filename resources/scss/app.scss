@@ -1,10 +1,11 @@
 @use "./utilities/variables.scss" as *;
 @import "~bootstrap/scss/bootstrap";
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap');
 
 body {
     background-color: #212121;
+    font-family: 'Sofia Sans Condensed', sans-serif;
 }
 
 ul {
@@ -43,7 +44,15 @@ header {
         }
 
         ul li {
-            margin-left: 2.5rem;
+            margin-left: 3rem;
+
+            a {
+                color: $colorFontBlack;
+                text-decoration: none;
+                font-size: 20px;
+                text-transform: uppercase;
+                font-weight: 500;
+            }
         }
     }
 }
@@ -177,41 +186,41 @@ footer {
         }
     }
 
-}
+    div.footer-lower {
+        background-color: #303030;
+        padding: 2rem 0;
 
-div.footer-lower {
-    background-color: #303030;
-    padding: 2rem 0;
-
-    div.signUp {
-        border: 1px solid $colorFontBlue;
-        padding: .88rem 1rem;
-        text-transform: uppercase;
-        font-weight: bold;
-        transition: all 1s ease;
-        cursor: pointer;
-
-        p {
-            color: $colorFontWhite;
-        }
-
-    }
-
-    div.signUp:hover {
-        background-color: $colorFontBlue;
-    }
-
-    div.social-icons {
-        h1 {
-            color: $colorFontBlue;
+        div.signUp {
+            border: 1px solid $colorFontBlue;
+            padding: .88rem 1rem;
             text-transform: uppercase;
-            font-size: 1.3rem;
-            margin-right: 1rem;
+            font-weight: bold;
+            transition: all 1s ease;
+            cursor: pointer;
+
+            p {
+                color: $colorFontWhite;
+            }
+
         }
 
-        ul li {
-            margin-right: 1rem;
+        div.signUp:hover {
+            background-color: $colorFontBlue;
         }
+
+        div.social-icons {
+            h1 {
+                color: $colorFontBlue;
+                text-transform: uppercase;
+                font-size: 1.3rem;
+                margin-right: 1rem;
+            }
+
+            ul li {
+                margin-right: 1rem;
+            }
+        }
+
     }
 
 }
