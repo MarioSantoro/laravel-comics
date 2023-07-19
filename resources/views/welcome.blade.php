@@ -27,4 +27,16 @@
             </div>
         </div>
     </section>
+    <div class="content-blue">
+        <div class="container">
+            <ul class="d-flex justify-content-between">
+                @for ($i = 0; $i < 5; $i++)
+                    <li class="d-flex align-items-center">
+                        <img src="{{ Vite::asset('resources/img/buy-dc-power-visa.svg') }}" alt="Image merch">
+                        <p class="text-uppercase m-0">dc power visa</p>
+                    </li>
+                @endfor
+            </ul>
+        </div>
+    </div>
 @endsection

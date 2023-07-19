@@ -116,4 +116,102 @@ main {
             }
         }
     }
+
+    div.content-blue {
+        background-color: $colorFontBlue;
+        padding: 3rem 0;
+
+        li {
+
+            img {
+                width: 55px;
+                height: 55px;
+                object-fit: contain;
+            }
+
+            p {
+                color: $colorFontWhite;
+                margin-left: 1rem;
+            }
+
+        }
+    }
+}
+
+footer {
+    div.footer-upper {
+        position: relative;
+        background-image: url(../img/footer-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 2rem 0;
+        overflow: hidden;
+
+
+        ul {
+            margin-right: 2rem;
+
+            li {
+                color: gray;
+                line-height: 30px;
+                font-size: .88rem;
+
+                h1 {
+                    color: $colorFontWhite;
+                    margin-bottom: 1rem;
+                    font-size: 1.3rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        div.comics-shop ul:nth-child(1) {
+            margin-bottom: 2rem;
+        }
+
+        img {
+            width: 620px;
+            position: absolute;
+            top: -70px;
+            left: 55%;
+        }
+    }
+
+}
+
+div.footer-lower {
+    background-color: #303030;
+    padding: 2rem 0;
+
+    div.signUp {
+        border: 1px solid $colorFontBlue;
+        padding: .88rem 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: all 1s ease;
+        cursor: pointer;
+
+        p {
+            color: $colorFontWhite;
+        }
+
+    }
+
+    div.signUp:hover {
+        background-color: $colorFontBlue;
+    }
+
+    div.social-icons {
+        h1 {
+            color: $colorFontBlue;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            margin-right: 1rem;
+        }
+
+        ul li {
+            margin-right: 1rem;
+        }
+    }
+
 }
