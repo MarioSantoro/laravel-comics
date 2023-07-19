@@ -1,5 +1,45 @@
+@use "./utilities/variables.scss" as *;
 @import "~bootstrap/scss/bootstrap";
 
-h1 {
-    color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+body {
+    background-color: #212121;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.colorBlack {
+    color: $colorFontBlack;
+}
+
+.active {
+    color: $colorFontBlue !important;
+    border-bottom: 3px solid $colorFontBlue;
+}
+
+.non-active {
+    margin-bottom: 3px;
+}
+
+header {
+
+    div.upper {
+        background-color: $colorFontBlue;
+        font-size: .88rem;
+        padding: .47rem 0;
+    }
+
+    div.lower {
+        background-color: $colorFontWhite;
+        padding: 1rem 0;
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
 }
