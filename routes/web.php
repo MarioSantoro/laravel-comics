@@ -15,5 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $navLinks = config('db.navLinks');
-    return view('welcome', compact('navLinks'));
+    $cards = config('db.cards');
+    return view('welcome', compact('navLinks', 'cards'));
 })->name('Homepage');

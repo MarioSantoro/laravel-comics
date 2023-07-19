@@ -12,12 +12,12 @@
         <div class="content-black">
             <div class="container">
                 <div class="cards container d-flex flex-wrap">
-                    @for ($i = 0; $i < 12; $i++)
+                    @foreach ($cards as $card)
                         <div class="card-cs ">
-                            <img src="https://d29xot63vimef3.cloudfront.net/image/batgirl/1-1.jpg" alt="">
-                            <h3>title</h3>
+                            <img src="{{ $card['thumb'] }}" alt="">
+                            <h3>{{ $card['title'] }}</h3>
                         </div>
-                    @endfor
+                    @endforeach
                 </div>
                 <div class="load-more">
                     <p class="m-0">Load more</p>
