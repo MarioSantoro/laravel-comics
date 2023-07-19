@@ -14,9 +14,9 @@
             </div>
             <nav>
                 <ul class="d-flex">
-                    @for ($i = 0; $i < 10; $i++)
-                        <li><a href="#">Home</a></li>
-                    @endfor
+                    @foreach ($navLinks as $link)
+                        <li><a href="{{ $link['link'] }}">{{ $link['text'] }}</a></li>
+                    @endforeach
                 </ul>
             </nav>
             <div class="searchbar">

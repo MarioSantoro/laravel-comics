@@ -1,6 +1,4 @@
 @extends('layout.app')
-
-
 @section('main-content')
     <section>
         <div class="jumbo">
