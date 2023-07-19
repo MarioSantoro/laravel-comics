@@ -16,5 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $navLinks = config('db.navLinks');
     $cards = config('db.cards');
-    return view('welcome', compact('navLinks', 'cards'));
+    $icon_shop = config('db.icons_shop');
+    return view('welcome', compact('navLinks', 'cards', 'icon_shop'));
 })->name('Homepage');

@@ -28,12 +28,12 @@
     <div class="content-blue">
         <div class="container">
             <ul class="d-flex justify-content-between">
-                @for ($i = 0; $i < 5; $i++)
+                @foreach ($icon_shop as $icon)
                     <li class="d-flex align-items-center">
-                        <img src="{{ Vite::asset('resources/img/buy-dc-power-visa.svg') }}" alt="Image merch">
-                        <p class="text-uppercase m-0">dc power visa</p>
+                        <img src="{{ Vite::asset($icon['image']) }}" alt="Image merch" class="me-3">
+                        <p class="text-uppercase m-0">{{ $icon['title'] }}</p>
                     </li>
-                @endfor
+                @endforeach
             </ul>
         </div>
     </div>
