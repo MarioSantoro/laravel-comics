@@ -60,10 +60,9 @@
             <div class="social-icons d-flex align-items-center justify-content-between">
                 <h1>Follow us</h1>
                 <ul class="d-flex">
-                    @for ($i = 0; $i < 5; $i++)
-                        <li v-for="icon in iconsList"><img src="{{ Vite::asset('resources/img/footer-youtube.png') }}"
-                                alt=""></li>
-                    @endfor
+                    @foreach ($icons_social as $icon)
+                        <li><img src="{{ Vite::asset($icon['image']) }}" alt=""></li>
+                    @endforeach
                 </ul>
             </div>
         </div>

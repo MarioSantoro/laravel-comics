@@ -17,5 +17,6 @@ Route::get('/', function () {
     $navLinks = config('db.navLinks');
     $cards = config('db.cards');
     $icon_shop = config('db.icons_shop');
-    return view('welcome', compact('navLinks', 'cards', 'icon_shop'));
-})->name('Homepage');
+    $icons_social = config('db.icons_social');
+    return view('welcome', compact('navLinks', 'cards', 'icon_shop', 'icons_social'));
+})->name('/');

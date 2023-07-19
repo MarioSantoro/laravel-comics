@@ -18,9 +18,13 @@ ul {
     color: $colorFontBlack;
 }
 
-.active {
-    color: $colorFontBlue !important;
+ul li.active {
     border-bottom: 3px solid $colorFontBlue;
+
+    a {
+
+        color: $colorFontBlue !important;
+    }
 }
 
 .non-active {
@@ -219,6 +223,7 @@ footer {
                 text-transform: uppercase;
                 font-size: 1.3rem;
                 margin-right: 1rem;
+                margin-bottom: 0;
             }
 
             ul li {

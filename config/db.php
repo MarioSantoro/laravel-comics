@@ -2,53 +2,53 @@
 return [
     'navLinks' => [
         [
-            'link' => "Homepage",
+            'link' => "/",
             'text' => "Characters",
             'active' => false,
         ],
         [
-            'link' => "Homepage",
+            'link' => "/",
             'text' => "Comics",
             'active' => true,
         ],
 
         [
-            'link' => "Homepage",
+            'link' => "/",
             'text' => "Movies",
             'active' => false,
         ],
         [
-            'link' => "Homepage",
+            'link' => "/",
             'text' => "TV",
             'active' => false,
         ],
         [
-            'link' => "Homepage",
+            'link' => "/",
             'text' => "games",
             'active' => false,
         ],
         [
-            'link' => "Homepage",
+            'link' => "/",
             'text' => "collectibles",
             'active' => false,
         ],
         [
-            'link' => "Homepage",
+            'link' => "/",
             'text' => "videos",
             'active' => false,
         ],
         [
-            'link' => "Homepage",
+            'link' => "/",
             'text' => "fans",
             'active' => false,
         ],
         [
-            'link' => "Homepage",
+            'link' => "/",
             'text' => "news",
             'active' => false,
         ],
         [
-            'link' => "Homepage",
+            'link' => "/",
             'text' => "shop",
             'active' => false,
         ],
@@ -287,5 +287,22 @@ return [
             'image' => 'resources/img/buy-dc-power-visa.svg',
             'title' => 'dc power visa'
         ]
+    ],
+    'icons_social'  => [
+        [
+            'image'  => 'resources/img/footer-facebook.png'
+        ],
+        [
+            'image'  => 'resources/img/footer-twitter.png'
+        ],
+        [
+            'image'  => 'resources/img/footer-youtube.png'
+        ],
+        [
+            'image'  => 'resources/img/footer-pinterest.png'
+        ],
+        [
+            'image'  => 'resources/img/footer-periscope.png'
+        ],
     ]
 ];

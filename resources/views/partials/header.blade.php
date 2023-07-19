@@ -15,7 +15,8 @@
             <nav>
                 <ul class="d-flex">
                     @foreach ($navLinks as $link)
-                        <li><a href="{{ $link['link'] }}">{{ $link['text'] }}</a></li>
+                        <li class="{{ $link['active'] ? 'active' : 'non-active' }}"><a
+                                href="{{ route($link['link']) }}">{{ $link['text'] }}</a></li>
                     @endforeach
                 </ul>
             </nav>
