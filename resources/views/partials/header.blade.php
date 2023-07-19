@@ -19,6 +19,9 @@
                     @endfor
                 </ul>
             </nav>
+            <div class="searchbar">
+                <input type="text">
+            </div>
         </div>
     </div>
     </div>

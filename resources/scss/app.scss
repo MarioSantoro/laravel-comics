@@ -41,5 +41,79 @@ header {
             width: 80px;
             height: 80px;
         }
+
+        ul li {
+            margin-left: 2.5rem;
+        }
+    }
+}
+
+main {
+    div.jumbo {
+        position: relative;
+
+        img {
+            height: 450px;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        div.series {
+            background-color: $colorFontBlue;
+            padding: .55rem 1.44rem;
+            position: absolute;
+
+            left: 17%;
+            bottom: -15px;
+
+            p {
+                text-transform: uppercase;
+                color: $colorFontWhite;
+                font-weight: bold;
+                font-size: 1.5rem;
+                margin: 0;
+            }
+        }
+    }
+
+    div.content-black {
+        background-color: #1c1c1c;
+        color: $colorFontWhite;
+        padding: 2.5rem 0;
+        padding-bottom: 1rem;
+
+        div.load-more {
+            width: 170px;
+            text-align: center;
+            margin: 0 auto;
+            background-color: $colorFontBlue;
+            padding: .55rem 1.44rem;
+            transition: all 1s ease;
+            cursor: pointer;
+        }
+
+        div.load-more:hover {
+            background-color: rgba($colorFontBlue , 0.7);
+        }
+
+        div.card-cs {
+            width: calc(100% / 6 - 25px);
+            margin-right: 25px;
+            margin-bottom: 1rem;
+
+
+            img {
+                width: 100%;
+                height: 175px;
+                margin-bottom: .88rem;
+                transition: all 1s ease;
+                cursor: pointer;
+            }
+
+            img:hover {
+                transform: scale(1.5);
+            }
+        }
     }
 }
