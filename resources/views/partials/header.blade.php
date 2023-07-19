@@ -20,8 +20,11 @@
                     @endforeach
                 </ul>
             </nav>
-            <div class="searchbar">
-                <input type="text">
+            <div class="searchbar position-relative">
+                <div class="icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input type="text" placeholder="Search">
             </div>
         </div>
     </div>

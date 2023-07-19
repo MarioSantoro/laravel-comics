@@ -64,6 +64,22 @@ header {
     div.logo {
         margin-left: 1rem;
     }
+
+    div.searchbar {
+        input {
+            border: none;
+            border-bottom: 2px solid $colorFontBlue;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        div.icon {
+            position: absolute;
+            right: 0;
+        }
+    }
 }
 
 main {
